@@ -1,0 +1,21 @@
+package Test;
+
+import java.util.Scanner;
+
+public class MyMathTest {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int[] a = new int[5];
+		for (int i = 0; i < a.length; i++) {
+			System.out.print("a" + "[" + i + "]: ");
+			a[i] = sc.nextInt();
+		}
+		
+		System.out.println("최대값은: " + MyMath.myMax(a));
+		System.out.println("최소값은: " + MyMath.myMin(a));
+
+	}
+
+}
